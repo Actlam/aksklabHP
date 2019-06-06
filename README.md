@@ -5,7 +5,7 @@
 
 # ディレクトリ構成
 ```
-akasakalab/
+aksklabHP/
 ├─ index.html             # トップページ
 ├─ about.html             # 研究室の理念, 講師紹介のページ
 ├─ contact.html           # 連絡用のページ
@@ -16,6 +16,5 @@ akasakalab/
 ├─ images
 └─ css/
     └─ common.css
-    └─ sanitize.css
-    
+    └─ sanitize.css    
 ```
