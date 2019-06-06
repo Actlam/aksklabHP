@@ -1,0 +1,228 @@
+@import "UTF-8";
+@import url(sanitize.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: normal;
+	height: 100%;
+}
+
+section, article, aside, nav, header, main, footer {
+	display: block;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: normal;
+}
+
+header ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* フルードイメージ対応 */
+img {
+	max-width: 100%;
+	height: 300px;
+}
+
+/* ヘッダー
+---------------------------------*/
+
+header {
+	width: 100%;
+	padding: 2em 0 0;
+	background: url("../images/header_mountain.jpg") scroll center/cover;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	padding: 10px 0;
+	width: 100%;
+}
+
+header nav ul {
+	margin: auto;
+	text-align: center;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	color: #FFF;
+	font-family: "Montserrat",sans-serif;
+	font-size: 16px;
+	padding: 0 1.5em;
+}
+
+header h1 a:visited{
+	color: #FFF;
+}
+
+/* タイトルの設定 */
+
+.bkRGBA {
+	padding: 30px;
+	margin: 0 30px auto;
+}
+
+.title {
+	font-size: 135;
+	color: white;
+	margin: 0 auto;
+}
+
+.subtitle {
+	font-size: 80%;
+	margin: 0 auto;
+}
+
+
+/* ナビゲーションバーの設定*/
+.Navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+@keyframes anime1 {
+	0% {
+		width: 0%;
+		height: 2px;
+	}
+	100% {
+		width: 100%; 
+		height: 2px; 
+		background-color: rgb(32, 155, 255);
+	}
+}
+
+.tandem {
+	display: flex;
+	flex-direction: column;
+}
+
+.tandem::after {
+	content: "";
+	display: inline;
+	width: 0%;
+	height: 2px;
+	background-color: rgb(32, 155, 255);
+	transition: all 0.5s;
+}
+
+.tandem:hover::after {
+	content: "";
+	display: inline;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(32, 155,255);
+}
+
+/* メインエリア
+------------------------------*/
+
+main {
+	width: 100%;
+	max-width: 930px;
+	margin: 0 auto;
+	padding: 24px 12px 50px 12px;
+}
+
+.row img {
+	float: right;
+}
+
+.contact {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* リンク文字の色設定 */
+main a { color: #2c9795;}
+main a:link,
+main a:visited {text-decoration: none;}
+
+/* カラムの設定
+------------------------------------------ */
+.row{
+	max-width: 930px;
+	margin: 0 auto 70px;
+}
+
+.row h2 {
+	color: #313131;
+	text-decoration: underline;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.col {
+	margin-left: 4%;
+	width: auto;
+}
+
+.col:first-child {margin-left: 0%;}
+
+/* リストの設定 */
+main ul, main ol {
+	background: #f6f6f6;
+	box-shadow: 0px 0px 1px silver;
+	padding: 0.5em 0.5em 0.5em 2em;
+}
+
+main ul li, main ol li{
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+
+/* フッターの設定
+--------------------------- */
+footer {
+	font-size: 80%; /* フォントサイズの設定 */
+	background-color: #313131; /* 背景色の指定 */
+	text-align: center; /* 文字の中央寄せ */
+	width: 100%; /* 横幅の指定 */
+	padding-top: 10px; /* 文字上部の余白 */
+	padding-bottom: 10px; /* 文字下部の余白 */
+	position: absolute; /* 配置の特定*/
+	bottom: auto; /* 配置場所の指定*/
+	height: 50px;
+}
+footer address {
+	color: #ffffff; /* 文字色の指定 */
+	font-family: "Montserrat", sans-serif; /* フォントの指定 */
+	letter-spacing: 4px; /* 文字と文字の間隔 */
+	font-style: normal; /* 文字の斜体を取り消す */
+}
+
+/* レスポンシブデザイン（599px以下の場合に適用）
+------------------------------ */
+@media screen and (max-width: 599) {
+	.col {
+		float: none;
+		margin-left: 0;
+		width: auto;
+	}
+}
+
