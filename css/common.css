@@ -151,6 +151,7 @@ main {
 
 .col img {
 	float: right;
+	padding: 0 20px;
 }
 
 .row .center {
