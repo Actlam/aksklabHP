@@ -149,9 +149,14 @@ main {
 }
 
 
-.row img {
+.col img {
 	float: right;
 }
+
+.row .center {
+	text-align: center;
+}
+
 
 .contact {
 	text-decoration: underline;
