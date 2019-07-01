@@ -1,6 +1,6 @@
 # 赤坂研究室HP
 赤坂研究室のホームページ管理を目的としているリポジトリです。<br>
-公開URL : [http://www.akasaka-lab.com/index.html](http://www.akasaka-lab.com/index.html)
+公開URL : [http://www.akasaka-lab.com/index.html](http://www.akasaka-lab.com/index.html)<br>
 github pages: [https://actlam.github.io/aksklabHP/](https://actlam.github.io/aksklabHP/)
 
 
